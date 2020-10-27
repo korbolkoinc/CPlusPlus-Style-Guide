@@ -1,1 +1,1 @@
-# CPlusPlus-Style-Guide
+# Korbolko C++ Coding Style Guide
