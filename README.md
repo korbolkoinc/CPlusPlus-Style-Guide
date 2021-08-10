@@ -132,7 +132,7 @@ enum class Color { RED, GREEN, BLUE };          ///< OK
 enum class Library
 {  
     PROGRAMMİNG_BOOKS,                          ///< OK
-    ComicBooks,                                 ///< INCORRECT
+    ComicBooks,                                 ///< OK
     adventure_books,                            ///< INCORRECT
     storyBooks                                  ///< INCORRECT
 };
@@ -184,6 +184,13 @@ Single Line Comments :
 ```cpp
 class Foo
 {
+    /**
+     *  @brief
+     *      Funciton explain will come here..
+     *    
+     *  @retval{int}  
+     *      Description of return value will go here.
+    **/
     public: int void boo() 
     {
         ///< Code ...
@@ -195,107 +202,109 @@ class Foo
 ### Parameters
 
 ```cpp
-
+    /**
+     *  @brief
+     *      Funciton explain will come here..
+     *
+     *  @param[in] val
+     *      Parameter description will be added here.
+     *
+     *    
+     *  @retval{int}  
+     *      Description of return value will go here.
+    **/
+    int void boo(int val) 
+    {
+        ///< Code ...
+    }
 ```
 
 ### Returns
 
 ```cpp
-
-```
-
-### Class
-
-```cpp
-
-```
-
-### Namespace
-
-```cpp
-
-```
-
-### Enum
-
-```cpp
-
+/**
+     *  @brief
+     *      Funciton explain will go here..
+     *
+     *  @return
+     *      Description of return statement will go here.
+     *    
+     *  @retval{int}  
+     *      Description of return value will go here.
+    **/
+    int void boo() 
+    {
+        ///< Code ...
+    }
 ```
 
 ### Template Parameters
 
 ```cpp
-
+/**
+ *  @brief
+ *      .....
+ *
+ *  @tparam T
+ *      The description of the template parameter will go here.
+ *
+**/
+template <typename T>
+class Example {};
 ```
 
 ### Throw & Exceptions
 
 ```cpp
-
+/**
+ *  @throws std::exception
+ *      if f not exist in directory
+ *
+**/
+void doSomethin(std::string& f);
 ```
 
 ### Notes
 
 ```cpp
+/**
+ *  @brief
+        ............
+ *
+ *  @note
+ *      ! Lİne 1 : ......
+ *      ! Lİne 2 : ......
+ *      ! Lİne 3 : ......
+ *      . . .
+**/
+class Foo {};
 
 ```
 
 ### Overload
 
 ```cpp
+double add(int a, int b) { /* . . . */}
+
+/**
+ *  @brief
+ *      . . .
+ *
+ *  @overload
+ *
+**/
+double add(float a, float b) { /* . . . */}
 
 ```
 
 ### See Also
 
 ```cpp
-
-```
-
-### Bug
-
-```cpp
-
-```
-
-### Todo
-
-```cpp
-
-```
-
-```cpp
 /**
- *  @brief
- *  this explain will come here..
- *
- *  @param
- *  this explain will come here..
- *
- *  @return
- *  this explain will come here..
- *
- *  @class
- *  this explain will come here..
- *  
- *  @todo
- *  this explain will come here..
- *
- *  @namespace
- *  this explain will come here..
- *  
- *  @enum
- *  this explain will come here..
- *
- *  @bug
- *  this explain will come here..
- *
- *  @tparam
- *  this explain will come here..
- *
- *  @throw
- *  this explain will come here..
- *  
+ *  @see
+ *      http:\\link..
 **/
+void foo();
 ```
->>>>>>> Stashed changes
+
+[See More About Comments](https://link)
