@@ -157,6 +157,17 @@ const int monsterHealth                         ///< INCORRECT
 #define MyExample                               ///< INCORRECT
 ```
 
+```cpp
+// Include Guards
+// Must consist of 6-digit random characters at the end. (..._HPP_randomcharacters)
+#ifndef PROJECTNAME_MODULENAME_CLASSNAME_HPP_8shy7a
+#define PROJECTNAME_MODULENAME_CLASSNAME_HPP_8shy7a
+
+///< Put your code here..
+
+#endif /* end of include guard: PROJECTNAME_MODULENAME_CLASSNAME_HPP_8shy7a */
+```
+
 ## Comments
 
 Multi Line Comments :
@@ -202,40 +213,40 @@ class Foo
 ### Parameters
 
 ```cpp
-    /**
-     *  @brief
-     *      Funciton explain will come here..
-     *
-     *  @param[in] val
-     *      Parameter description will be added here.
-     *
-     *    
-     *  @retval{int}  
-     *      Description of return value will go here.
-    **/
-    int void boo(int val) 
-    {
-        ///< Code ...
-    }
+/**
+ *  @brief
+ *      Funciton explain will come here..
+ *
+ *  @param[in] val
+ *      Parameter description will be added here.
+ *
+ *    
+ *  @retval{int}  
+ *      Description of return value will go here.
+**/
+int void boo(int val) 
+{
+    ///< Code ...
+}
 ```
 
 ### Returns
 
 ```cpp
 /**
-     *  @brief
-     *      Funciton explain will go here..
-     *
-     *  @return
-     *      Description of return statement will go here.
-     *    
-     *  @retval{int}  
-     *      Description of return value will go here.
-    **/
-    int void boo() 
-    {
-        ///< Code ...
-    }
+ *  @brief
+ *      Funciton explain will go here..
+ *
+ *  @return
+ *      Description of return statement will go here.
+ *    
+ *  @retval{int}  
+ *      Description of return value will go here.
+**/
+int void boo() 
+{
+    ///< Code ...
+}
 ```
 
 ### Template Parameters
